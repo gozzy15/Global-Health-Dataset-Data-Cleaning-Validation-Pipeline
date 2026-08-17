@@ -499,6 +499,29 @@ The architecture can be summarized as:
                     │ missing_values.py   │
                     └──────────┬──────────┘
                                │
+                               ▼
+                    ┌─────────────────────┐
+                    │   Transformation    │
+                    │     pipeline.py     │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │     Validation      │
+                    │    validation.py    │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │ Validation Report   │
+                    │ validation_report.py│
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │   Cleaned Dataset   │
+                    │    data/processed   │
+                    └─────────────────────┘
 ```
 
 # Directory Structure
